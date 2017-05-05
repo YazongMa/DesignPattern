@@ -2,6 +2,9 @@
 
 
 Operation::Operation()
+	:
+m_dNumA(0.0f),
+m_dNumB(0.0f)
 {
 }
 
