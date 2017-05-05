@@ -24,8 +24,8 @@ int main()
 	std::cout << "input num2: ";
 	std::cin >> d2;
 
-	OperFactory op;
-	std::cout << op.CreateOperation(oper, d1, d2) << std::endl;
+	OperFactory op(oper);
+	std::cout << op.Calculation(d1, d2) << std::endl;
 
 	return 0;
 }

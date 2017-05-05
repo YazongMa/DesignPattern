@@ -67,29 +67,48 @@ class OperFactory
 {
 public:
 	OperFactory() : m_ptr(NULL){}
-	~OperFactory(){ if (m_ptr) { delete m_ptr; m_ptr = NULL; } }
-
-	double CreateOperation(std::string oper, double dA, double dB)
+	OperFactory(std::string oper)
 	{
+		CreateOperation(oper);
+	}
+
+	~OperFactory()
+	{ 
+		if (m_ptr)
+		{ 
+			delete m_ptr; 
+			m_ptr = NULL; 
+		} 
+	}
+
+
+	void CreateOperation(std::string oper)
+	{
+		if (m_ptr == NULL)
+			throw "operator is error !";
+
 		switch (oper[0])
 		{
-		case '+' :
+		case '+':
 			m_ptr = new OperAdd();
 			break;
 
-		case '-' :
+		case '-':
 			m_ptr = new OperSub();
 			break;
 
-		case '*' :
+		case '*':
 			m_ptr = new OperMul();
 			break;
 
-		case '/' :
+		case '/':
 			m_ptr = new OperDiv();
 			break;
 		}
+	}
 
+	double Calculation(double dA, double dB)
+	{
 		m_ptr->SetNumA(dA);
 		m_ptr->SetNumB(dB);
 
