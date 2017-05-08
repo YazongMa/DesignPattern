@@ -24,8 +24,11 @@ int main()
 	std::cout << "input num2: ";
 	std::cin >> d2;
 
-	OperFactory op(oper);
-	std::cout << op.Calculation(d1, d2) << std::endl;
+	OperFactory op;
+	Operation* opt = op.CreateOperation(oper);
+	opt->SetNumA(d1);
+	opt->SetNumB(d2);
+	std::cout << opt->GetResult() << std::endl;
 
 	return 0;
 }

@@ -82,11 +82,8 @@ public:
 	}
 
 
-	void CreateOperation(std::string oper)
+	Operation* CreateOperation(std::string oper)
 	{
-		if (m_ptr == NULL)
-			throw "operator is error !";
-
 		switch (oper[0])
 		{
 		case '+':
@@ -105,6 +102,8 @@ public:
 			m_ptr = new OperDiv();
 			break;
 		}
+
+		return m_ptr;
 	}
 
 	double Calculation(double dA, double dB)
