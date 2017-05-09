@@ -37,29 +37,38 @@ public:
 };
 
 
-class Decorator_New :public Component
+class Decorator :public Component
 {
 public:
-	Decorator_New(Component& componentnew)
+	Decorator(){}
+	Decorator(Component& componentnew)
 	{
-		_Component_New = &componentnew;
+		m_ptr = &componentnew;
 	}
 	void getNew()
 	{
-		_Component_New->getNew();
+		if (m_ptr)
+		{
+			m_ptr->getNew();
+		}
+	}
+	void setComponent(Component& componentnew)
+	{
+		m_ptr = &componentnew;
 	}
 private:
-	Component* _Component_New;
+	Component*	m_ptr;
 };
 
 
-class ConcreteDecorator_AddAmount :public Decorator_New
+class Decorator_AddAmount :public Decorator
 {
 public:
-	ConcreteDecorator_AddAmount(Component& componentnew)
-		:Decorator_New(componentnew)
+	Decorator_AddAmount(){}
+	Decorator_AddAmount(Component& componentnew)
+		:Decorator(componentnew)
 	{
-		//              Decorator_New::Decorator_New(&componentnew);
+		//              Decorator::Decorator(&componentnew);
 	}
 
 	void AddAmount()
@@ -70,16 +79,17 @@ public:
 	void getNew()
 	{
 		AddAmount();
-		Decorator_New::getNew();
+		Decorator::getNew();
 	}
 };
 
 
-class ConcreteDecorator_AddRss :public Decorator_New
+class Decorator_AddRss :public Decorator
 {
 public:
-	ConcreteDecorator_AddRss(Component& componentnew)
-		:Decorator_New(componentnew)
+	Decorator_AddRss(){}
+	Decorator_AddRss(Component& componentnew)
+		:Decorator(componentnew)
 	{}
 
 	void AddRss()
@@ -90,26 +100,27 @@ public:
 	void getNew()
 	{
 		AddRss();
-		Decorator_New::getNew();
+		Decorator::getNew();
 	}
 };
 
 
-class ConcreteDecorator_AddPhoto: public Decorator_New
+class Decorator_AddPhoto: public Decorator
 {
 public:
-	ConcreteDecorator_AddPhoto(Component& componentnew)
-		:Decorator_New(componentnew)
+	Decorator_AddPhoto(){}
+	Decorator_AddPhoto(Component& componentnew)
+		:Decorator(componentnew)
 	{}
 
-	void AddCss()
+	void AddPhoto()
 	{
 		cout << "有图有真相: 图片已经加入到RSS中" << endl;
 	}
 
 	void getNew()
 	{
-		AddCss();
-		Decorator_New::getNew();
+		AddPhoto();
+		Decorator::getNew();
 	}
 };

@@ -13,16 +13,24 @@
 
 int main()
 {
-	XML_New db;
-	ConcreteDecorator_AddAmount* amount = new ConcreteDecorator_AddAmount(db);
-	ConcreteDecorator_AddRss* rss = new ConcreteDecorator_AddRss(*amount);
-	ConcreteDecorator_AddPhoto* photo = new ConcreteDecorator_AddPhoto(*rss);
+    XML_New xml;
 
-	photo->getNew();
+    /*
+    Decorator_AddAmount amount(xml);
+    Decorator_AddPhoto photo(amount);
+    Decorator_AddRss rss(photo);
+    rss.getNew();
+    */
 
-	delete amount;
-	delete rss;
-	delete photo;
+    Decorator_AddAmount amount;
+    amount.setComponent(xml);
 
-	return 0;
+    Decorator_AddPhoto photo;
+    photo.setComponent(amount);
+
+    Decorator_AddRss rss;
+    rss.setComponent(photo);
+    rss.getNew();
+
+    return 0;
 }
