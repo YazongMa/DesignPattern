@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fectory", "Fectory\Fectory.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Strategy", "Strategy\Strategy.vcxproj", "{88EA465F-10BD-4F75-A45A-10AB13230BC1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Decorator", "Decorator\Decorator.vcxproj", "{C70C28AE-AD05-441A-B006-1118C72A14EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{88EA465F-10BD-4F75-A45A-10AB13230BC1}.Debug|Win32.Build.0 = Debug|Win32
 		{88EA465F-10BD-4F75-A45A-10AB13230BC1}.Release|Win32.ActiveCfg = Release|Win32
 		{88EA465F-10BD-4F75-A45A-10AB13230BC1}.Release|Win32.Build.0 = Release|Win32
+		{C70C28AE-AD05-441A-B006-1118C72A14EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C70C28AE-AD05-441A-B006-1118C72A14EC}.Debug|Win32.Build.0 = Debug|Win32
+		{C70C28AE-AD05-441A-B006-1118C72A14EC}.Release|Win32.ActiveCfg = Release|Win32
+		{C70C28AE-AD05-441A-B006-1118C72A14EC}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
