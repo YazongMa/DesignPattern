@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		设计模式.vsd = 设计模式.vsd
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proxy", "Proxy\Proxy.vcxproj", "{A420920C-3E3B-4701-ACC4-B93C1E541EE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -32,6 +34,10 @@ Global
 		{C70C28AE-AD05-441A-B006-1118C72A14EC}.Debug|Win32.Build.0 = Debug|Win32
 		{C70C28AE-AD05-441A-B006-1118C72A14EC}.Release|Win32.ActiveCfg = Release|Win32
 		{C70C28AE-AD05-441A-B006-1118C72A14EC}.Release|Win32.Build.0 = Release|Win32
+		{A420920C-3E3B-4701-ACC4-B93C1E541EE7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A420920C-3E3B-4701-ACC4-B93C1E541EE7}.Debug|Win32.Build.0 = Debug|Win32
+		{A420920C-3E3B-4701-ACC4-B93C1E541EE7}.Release|Win32.ActiveCfg = Release|Win32
+		{A420920C-3E3B-4701-ACC4-B93C1E541EE7}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
