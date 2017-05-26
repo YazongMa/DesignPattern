@@ -5,6 +5,7 @@
 
 using namespace std;
 
+#if 0
 class Vehicle
 {
 public:
@@ -85,13 +86,7 @@ int main()
 
 
 
-#if 0
-#include <iostream>
-#include <string>
-#include <vector>
-#include "vld.h"
-
-using namespace std;
+#else
 
 class Girl{
 public:
@@ -169,7 +164,7 @@ private:
 
 int main()
 {
-	Girl mm("Ð¡¾ê");
+	Girl mm("±¦±¦");
 	Proxy pro(mm);
 	pro.GiveChocolate();
 	pro.GiveDolls();
