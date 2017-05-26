@@ -19,4 +19,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vehicle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GiveGift.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoPtr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
