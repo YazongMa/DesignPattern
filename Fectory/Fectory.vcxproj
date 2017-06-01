@@ -78,9 +78,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="SimpleFactory.h" />
     <ClInclude Include="Operation.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="SimpleFactory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Operation.cpp" />
   </ItemGroup>
