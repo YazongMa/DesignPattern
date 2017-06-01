@@ -4,15 +4,15 @@ template <class T>
 class AutoPtr
 {
 public:
-	AutoPtr()
+	explicit AutoPtr(T* ptr_ = NULL)
 	:
-	ptr(new T)
+	ptr(ptr_)
 	{
 	}
 
-	explicit AutoPtr(const AutoPtr<T>& r)
+	AutoPtr(AutoPtr<T>& r)
 	:
-	ptr(&*r)
+	ptr(r.release())
 	{
 	}
 
@@ -31,15 +31,24 @@ public:
 		return ptr;
 	}
 
-	AutoPtr<T>& operator=(const AutoPtr<T>& r)
+	AutoPtr<T>& operator=(AutoPtr<T>& r)
 	{
-		if (this != *r)
-		{
-			delete ptr;
-		}
-		ptr = *r;
-
+		reset(r.release());
 		return *this;
+	}
+
+	T* release()
+	{
+		T* tmp = ptr;
+		ptr = NULL;
+		return tmp;
+	}
+
+	void reset(T* ptr_ = NULL)
+	{
+		if (ptr != ptr_)
+			delete ptr;
+		ptr = ptr_;
 	}
 
 private:

@@ -3,6 +3,9 @@
 #include "AutoPtr.h"
 #include "vld.h"
 
+#include <iostream>
+#include <memory>
+
 void proxy1()
 {
 	Car c;
@@ -28,12 +31,28 @@ void proxy2()
 
 void proxy3()
 {
-	AutoPtr<Girl> girl;
+	AutoPtr<Girl> girl(new Girl());
 	girl->setName("JiaoJiao");
-	girl->getName();
+	std::cout << girl->getName() << std::endl;
 
 	AutoPtr<Girl> girl2(girl);
-	std::cout<<girl2->getName()<<std::endl;
+	std::cout << girl2->getName() <<std::endl;
+
+	AutoPtr<Girl> girl3 = girl2;
+	std::cout << girl3->getName() << std::endl;
+
+	AutoPtr<Girl> girl4;
+	girl4 = girl3;
+	std::cout << girl4->getName() << std::endl;
+}
+
+void proxy4()
+{
+	std::auto_ptr<Girl> girl(new Girl("LALA"));
+	std::cout << girl->getName() << std::endl;
+
+	std::shared_ptr<Girl> girl2(new Girl("DuDu"));
+	std::cout << girl2->getName() << std::endl;
 }
 
 int main()
@@ -41,6 +60,7 @@ int main()
 	proxy1();
 	proxy2();
 	proxy3();
+	proxy4();
 
 	return 0;
 }
