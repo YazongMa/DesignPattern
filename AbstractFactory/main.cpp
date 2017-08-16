@@ -5,6 +5,7 @@
 #include "Fruit.h"
 #include "vld.h"
 
+
 void AbstractFactoryTest()
 {
 	AbstractFactory* abstractFactory = NULL;
