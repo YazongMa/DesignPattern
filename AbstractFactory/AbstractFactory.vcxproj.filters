@@ -39,6 +39,12 @@
     <ClInclude Include="SourthFactory.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Apple.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Banana.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractFactory.cpp">
@@ -68,5 +74,14 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Apple.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Banana.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

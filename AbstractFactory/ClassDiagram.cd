@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="AbstractFactory">
+    <Position X="2" Y="6.5" Width="2" />
+    <Members>
+      <Method Name="~AbstractFactory" Hidden="true" />
+      <Method Name="AbstractFactory" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQEIAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fruit">
+    <Position X="4.25" Y="0.5" Width="1.75" />
+    <Members>
+      <Method Name="~Fruit" Hidden="true" />
+      <Method Name="Fruit" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Fruit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NorthApple">
+    <Position X="3" Y="4.25" Width="1.75" />
+    <Members>
+      <Method Name="~NorthApple" Hidden="true" />
+      <Method Name="NorthApple" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>NorthApple.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NorthBanana">
+    <Position X="7.75" Y="4.25" Width="1.75" />
+    <Members>
+      <Method Name="~NorthBanana" Hidden="true" />
+      <Method Name="NorthBanana" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAEAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>NorthBanana.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NorthFactory">
+    <Position X="0.5" Y="8.5" Width="2" />
+    <Members>
+      <Method Name="~NorthFactory" Hidden="true" />
+      <Method Name="NorthFactory" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAQMAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NorthFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SourthApple">
+    <Position X="0.75" Y="4.25" Width="1.5" />
+    <Members>
+      <Method Name="~SourthApple" Hidden="true" />
+      <Method Name="sayName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SourthApple.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SourthBanana">
+    <Position X="5.5" Y="4.25" Width="1.5" />
+    <Members>
+      <Method Name="~SourthBanana" Hidden="true" />
+      <Method Name="sayName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAEAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SourthBanana.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SourthFactory">
+    <Position X="3.25" Y="8.5" Width="2" />
+    <Members>
+      <Method Name="~SourthFactory" Hidden="true" />
+      <Method Name="SourthFactory" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>SourthFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Apple">
+    <Position X="2" Y="2.25" Width="1.75" />
+    <Members>
+      <Method Name="~Apple" Hidden="true" />
+      <Method Name="Apple" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Apple.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Banana">
+    <Position X="6.75" Y="2.25" Width="1.75" />
+    <Members>
+      <Method Name="~Banana" Hidden="true" />
+      <Method Name="Banana" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Banana.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

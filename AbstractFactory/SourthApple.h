@@ -1,7 +1,7 @@
 #pragma once
-#include "Fruit.h"
+#include "Apple.h"
 class SourthApple :
-	public Fruit
+	public Apple
 {
 public:
 	SourthApple();

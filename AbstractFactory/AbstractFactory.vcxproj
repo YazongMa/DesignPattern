@@ -79,6 +79,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h" />
+    <ClInclude Include="Apple.h" />
+    <ClInclude Include="Banana.h" />
     <ClInclude Include="Fruit.h" />
     <ClInclude Include="NorthApple.h" />
     <ClInclude Include="NorthBanana.h" />
@@ -89,6 +91,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractFactory.cpp" />
+    <ClCompile Include="Apple.cpp" />
+    <ClCompile Include="Banana.cpp" />
     <ClCompile Include="Fruit.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NorthApple.cpp" />
@@ -97,6 +101,9 @@
     <ClCompile Include="SourthApple.cpp" />
     <ClCompile Include="SourthBanana.cpp" />
     <ClCompile Include="SourthFactory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
