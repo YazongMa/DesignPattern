@@ -16,6 +16,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proxy", "Proxy\Proxy.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FactoryMethod", "FactoryMethod\FactoryMethod.vcxproj", "{99399280-B043-4D15-A1DB-6CFCE0B16E27}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AbstractFactory", "AbstractFactory\AbstractFactory.vcxproj", "{A6E75B9F-2E6C-4363-8EC6-F6DA02282FC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -38,6 +40,10 @@ Global
 		{99399280-B043-4D15-A1DB-6CFCE0B16E27}.Debug|Win32.Build.0 = Debug|Win32
 		{99399280-B043-4D15-A1DB-6CFCE0B16E27}.Release|Win32.ActiveCfg = Release|Win32
 		{99399280-B043-4D15-A1DB-6CFCE0B16E27}.Release|Win32.Build.0 = Release|Win32
+		{A6E75B9F-2E6C-4363-8EC6-F6DA02282FC5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A6E75B9F-2E6C-4363-8EC6-F6DA02282FC5}.Debug|Win32.Build.0 = Debug|Win32
+		{A6E75B9F-2E6C-4363-8EC6-F6DA02282FC5}.Release|Win32.ActiveCfg = Release|Win32
+		{A6E75B9F-2E6C-4363-8EC6-F6DA02282FC5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
