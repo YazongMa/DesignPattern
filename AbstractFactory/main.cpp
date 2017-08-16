@@ -6,6 +6,10 @@
 #include "vld.h"
 
 
+void AbstractFactoryTest(int i)
+{
+}
+
 void AbstractFactoryTest()
 {
 	AbstractFactory* abstractFactory = NULL;
