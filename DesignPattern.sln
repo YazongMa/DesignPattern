@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Strategy", "Strategy\Strate
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Decorator", "Decorator\Decorator.vcxproj", "{C70C28AE-AD05-441A-B006-1118C72A14EC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{78A470CC-0C36-4137-9A84-C31F1EE9563F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "建造型", "建造型", "{78A470CC-0C36-4137-9A84-C31F1EE9563F}"
 	ProjectSection(SolutionItems) = preProject
 		设计模式.vsd = 设计模式.vsd
 	EndProjectSection
@@ -19,6 +19,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AbstractFactory", "AbstractFactory\AbstractFactory.vcxproj", "{A6E75B9F-2E6C-4363-8EC6-F6DA02282FC5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Builder", "Builder\Builder.vcxproj", "{8A67D9C0-1F0E-4D69-9152-99982FA3D31C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "行为型", "行为型", "{76F64E66-B32B-48F9-84C0-99E506DC6DC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "结构型", "结构型", "{0AA7F5A1-E2DA-4B2F-88FE-6B2B09C58905}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,5 +57,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{88EA465F-10BD-4F75-A45A-10AB13230BC1} = {76F64E66-B32B-48F9-84C0-99E506DC6DC4}
+		{C70C28AE-AD05-441A-B006-1118C72A14EC} = {0AA7F5A1-E2DA-4B2F-88FE-6B2B09C58905}
+		{A420920C-3E3B-4701-ACC4-B93C1E541EE7} = {0AA7F5A1-E2DA-4B2F-88FE-6B2B09C58905}
+		{99399280-B043-4D15-A1DB-6CFCE0B16E27} = {78A470CC-0C36-4137-9A84-C31F1EE9563F}
+		{A6E75B9F-2E6C-4363-8EC6-F6DA02282FC5} = {78A470CC-0C36-4137-9A84-C31F1EE9563F}
+		{8A67D9C0-1F0E-4D69-9152-99982FA3D31C} = {78A470CC-0C36-4137-9A84-C31F1EE9563F}
 	EndGlobalSection
 EndGlobal

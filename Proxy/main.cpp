@@ -1,4 +1,3 @@
-#include "Vehicle.h"
 #include "GiveGift.h"
 #include "AutoPtr.h"
 #include "vld.h"
@@ -6,17 +5,6 @@
 #include <iostream>
 #include <memory>
 
-void proxy1()
-{
-	Car c;
-	Bike b;
-
-	VehicleSurrogate vs1(c);
-	std::cout << vs1.getName() << std::endl;
-
-	VehicleSurrogate vs2(b);
-	std::cout << vs2.getName() << std::endl;
-}
 
 
 void proxy2()
@@ -57,7 +45,6 @@ void proxy4()
 
 int main()
 {
-	proxy1();
 	proxy2();
 	proxy3();
 	proxy4();
