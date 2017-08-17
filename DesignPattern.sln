@@ -8,9 +8,6 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Decorator", "Decorator\Decorator.vcxproj", "{C70C28AE-AD05-441A-B006-1118C72A14EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "建造型", "建造型", "{78A470CC-0C36-4137-9A84-C31F1EE9563F}"
-	ProjectSection(SolutionItems) = preProject
-		设计模式.vsd = 设计模式.vsd
-	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proxy", "Proxy\Proxy.vcxproj", "{A420920C-3E3B-4701-ACC4-B93C1E541EE7}"
 EndProject
@@ -25,6 +22,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "结构型", "结构型", "{0AA7F5A1-E2DA-4B2F-88FE-6B2B09C58905}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Singleton", "Singleton\Singleton.vcxproj", "{6DAFC123-1706-45CA-933F-D0E11417141F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{48177DB4-43CA-4DFE-875B-3B65E394740E}"
+	ProjectSection(SolutionItems) = preProject
+		设计模式.vsd = 设计模式.vsd
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Prototype", "Prototype\Prototype.vcxproj", "{902BC0F1-D137-4CAD-939A-59CE654026A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +64,10 @@ Global
 		{6DAFC123-1706-45CA-933F-D0E11417141F}.Debug|Win32.Build.0 = Debug|Win32
 		{6DAFC123-1706-45CA-933F-D0E11417141F}.Release|Win32.ActiveCfg = Release|Win32
 		{6DAFC123-1706-45CA-933F-D0E11417141F}.Release|Win32.Build.0 = Release|Win32
+		{902BC0F1-D137-4CAD-939A-59CE654026A4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{902BC0F1-D137-4CAD-939A-59CE654026A4}.Debug|Win32.Build.0 = Debug|Win32
+		{902BC0F1-D137-4CAD-939A-59CE654026A4}.Release|Win32.ActiveCfg = Release|Win32
+		{902BC0F1-D137-4CAD-939A-59CE654026A4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,5 +80,6 @@ Global
 		{A6E75B9F-2E6C-4363-8EC6-F6DA02282FC5} = {78A470CC-0C36-4137-9A84-C31F1EE9563F}
 		{8A67D9C0-1F0E-4D69-9152-99982FA3D31C} = {78A470CC-0C36-4137-9A84-C31F1EE9563F}
 		{6DAFC123-1706-45CA-933F-D0E11417141F} = {78A470CC-0C36-4137-9A84-C31F1EE9563F}
+		{902BC0F1-D137-4CAD-939A-59CE654026A4} = {78A470CC-0C36-4137-9A84-C31F1EE9563F}
 	EndGlobalSection
 EndGlobal
