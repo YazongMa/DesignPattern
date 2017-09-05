@@ -73,13 +73,13 @@ public:
 
 	void AddAmount()
 	{
-		cout << "新闻人气已经加一" << endl;
+		cout << "AddAmount" << endl;
 	}
 
 	void getNew()
 	{
-		AddAmount();
 		Decorator::getNew();
+		AddAmount();
 	}
 };
 
@@ -94,13 +94,13 @@ public:
 
 	void AddRss()
 	{
-		cout << "新闻标题已经加入到RSS中" << endl;
+		cout << "AddRss" << endl;
 	}
 
 	void getNew()
 	{
-		AddRss();
 		Decorator::getNew();
+		AddRss();
 	}
 };
 
@@ -115,12 +115,12 @@ public:
 
 	void AddPhoto()
 	{
-		cout << "有图有真相: 图片已经加入到RSS中" << endl;
+		cout << "AddPhoto" << endl;
 	}
 
 	void getNew()
 	{
-		AddPhoto();
 		Decorator::getNew();
+		AddPhoto();
 	}
 };

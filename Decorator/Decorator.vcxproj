@@ -79,10 +79,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Decorator.h" />
+    <ClInclude Include="DecoratorTest.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Decorator.cpp" />
+    <ClCompile Include="DecoratorTest.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
