@@ -45,6 +45,15 @@
     <ClInclude Include="Banana.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="EastFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EastApple.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EastBanana.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractFactory.cpp">
@@ -78,6 +87,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Banana.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EastFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EastApple.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EastBanana.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

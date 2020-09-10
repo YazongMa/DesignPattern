@@ -2,8 +2,9 @@
 #include "AbstractFactory.h"
 #include "SourthFactory.h"
 #include "NorthFactory.h"
+#include "EastFactory.h"
 #include "Fruit.h"
-#include "vld.h"
+//#include "vld.h"
 
 
 void AbstractFactoryTest(int i)
@@ -37,6 +38,15 @@ void AbstractFactoryTest()
 	delete abstractFactory;
 
 
+	abstractFactory = new EastFactory();
+	fruit = abstractFactory->createApple();
+	fruit->sayName();
+	delete fruit;
+
+	fruit = abstractFactory->createBanana();
+	fruit->sayName();
+	delete fruit;
+	delete abstractFactory;
 
 
 	abstractFactory = NULL;

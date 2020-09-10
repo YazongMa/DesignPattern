@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -19,13 +19,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -81,6 +81,9 @@
     <ClInclude Include="AbstractFactory.h" />
     <ClInclude Include="Apple.h" />
     <ClInclude Include="Banana.h" />
+    <ClInclude Include="EastApple.h" />
+    <ClInclude Include="EastBanana.h" />
+    <ClInclude Include="EastFactory.h" />
     <ClInclude Include="Fruit.h" />
     <ClInclude Include="NorthApple.h" />
     <ClInclude Include="NorthBanana.h" />
@@ -93,6 +96,9 @@
     <ClCompile Include="AbstractFactory.cpp" />
     <ClCompile Include="Apple.cpp" />
     <ClCompile Include="Banana.cpp" />
+    <ClCompile Include="EastApple.cpp" />
+    <ClCompile Include="EastBanana.cpp" />
+    <ClCompile Include="EastFactory.cpp" />
     <ClCompile Include="Fruit.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NorthApple.cpp" />
